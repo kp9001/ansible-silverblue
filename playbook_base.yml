@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  roles:
+    - { role: containers }
+    - { role: desktop }
+    - { role: dotfiles }
+    - { role: layered_packages }
+    - { role: flatpaks }
+    - { role: security }
