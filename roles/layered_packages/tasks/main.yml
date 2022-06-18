@@ -1,5 +1,5 @@
 ---
-# tasks file for layered_ packages
+# tasks file for layered_packages
 
 - name: Check to see if an rpm-ostree transaction is currently running
   ansible.builtin.command: pgrep rpm-ostree
