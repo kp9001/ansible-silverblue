@@ -1,5 +1,3 @@
-# The 'flatpak' role #
-######################
 flatpak_remote_install:
   - { name: 'fedora', url: 'oci+https://registry.fedoraproject.org' }                          # Fedora
   - { name: 'flathub', url: 'https://dl.flathub.org/repo/flathub.flatpakrepo' }                # Flathub
@@ -21,13 +19,9 @@ flatpak_package_install:
   - { remote: 'flathub', package: 'org.udacityteam.Audacity' }
   - { remote: 'flathub', package: 'org.videolan.VLC' }
 
-# The 'fonts' role #
-####################
 install_fonts:
   - Hack
 
-# The 'layered_packages' role #
-###############################
 layered_package_install:
   - alacritty
   - htop

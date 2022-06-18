@@ -1,9 +1,11 @@
 ---
 
-- hosts: all
+- hosts: this_host
   roles:
-#    - { role: containers }
     - { role: dotfiles }
     - { role: flatpaks }
     - { role: fonts }
     - { role: layered_packages }
+
+- hosts: container
+    - { role: containers }
