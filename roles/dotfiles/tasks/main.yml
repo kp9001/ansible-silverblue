@@ -10,42 +10,42 @@
 
  - name: Symlink bashrc
    file:
-     src: "{{ user_home }}/dotfiles/shell/bashrc" 
-     dest: "{{ user_home }}/.bashrc" 
+     src: "{{ ansible_env.HOME }}/dotfiles/shell/bashrc" 
+     dest: "{{ ansible_env.HOME }}/.bashrc" 
      state: link
 
  - name: Symlink tmux theme
    file:
-     src: "{{ user_home }}/dotfiles/tmux/theme_tmux.conf" 
-     dest: "{{ user_home }}/.theme_tmux.conf" 
+     src: "{{ ansible_env.HOME }}/dotfiles/tmux/theme_tmux.conf" 
+     dest: "{{ ansible_env.HOME }}/.theme_tmux.conf" 
      state: link
 
  - name: Symlink tmux
    file:
-     src: "{{ user_home }}/dotfiles/tmux/tmux.conf" 
-     dest: "{{ user_home }}/.tmux.conf" 
+     src: "{{ ansible_env.HOME }}/dotfiles/tmux/tmux.conf" 
+     dest: "{{ ansible_env.HOME }}/.tmux.conf" 
      state: link
 
  - name: Symlink vimrc
    file:
-     src: "{{ user_home }}/dotfiles/vim/vimrc" 
-     dest: "{{ user_home }}/.vimrc" 
+     src: "{{ ansible_env.HOME }}/dotfiles/vim/vimrc" 
+     dest: "{{ ansible_env.HOME }}/.vimrc" 
      state: link
 
  - name: Symlink alacritty
    file:
-     src: "{{ user_home }}/dotfiles/alacritty" 
-     dest: "{{ user_home }}/.config/alacritty" 
+     src: "{{ ansible_env.HOME }}/dotfiles/alacritty" 
+     dest: "{{ ansible_env.HOME }}/.config/alacritty" 
      state: link
 
  - name: Symlink rangeralacritty
    file:
-     src: "{{ user_home }}/dotfiles/ranger" 
-     dest: "{{ user_home }}/.config/ranger" 
+     src: "{{ ansible_env.HOME }}/dotfiles/ranger" 
+     dest: "{{ ansible_env.HOME }}/.config/ranger" 
      state: link
 
  - name: Symlink zathura
    file:
-     src: "{{ user_home }}/dotfiles/zathura" 
-     dest: "{{ user_home }}/.config/zathura" 
+     src: "{{ ansible_env.HOME }}/dotfiles/zathura" 
+     dest: "{{ ansible_env.HOME }}/.config/zathura" 
      state: link
