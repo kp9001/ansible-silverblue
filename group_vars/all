@@ -1,3 +1,7 @@
+# Directories #
+###############
+user_home: "{{ '~' | expanduser }}"
+
 # The 'layered_packages' role #
 ###############################
 layered_package_install:
