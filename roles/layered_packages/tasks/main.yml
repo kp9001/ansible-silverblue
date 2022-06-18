@@ -14,12 +14,14 @@
   community.general.rpm_ostree_pkg:
     name: "{{ item }}"
     state: present
-  failed_when: ostree_status.rc == "999"  # Don't fail, regardless of return code
+  become: yes
+  become_method: sudo
   loop: "{{ layered_package_install }}"
 
 - name: Remove applications from the base OS
   ansible.builtin.command: rpm-ostree override remove {{ item }}
-  failed_when: ostree_status.rc == "999"  # Don't fail, regardless of return code
+  become: yes
+  become_method: sudo
   loop: "{{ base_package_remove }}"
 
 - debug:
