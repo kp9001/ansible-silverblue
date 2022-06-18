@@ -16,8 +16,6 @@
 - name: Copy fonts to the user's '~/.local/share/fonts' directory
   ansible.builtin.command: cp -r /tmp/fonts/{{ item }} {{ ansible_env.HOME }}/.local/share/fonts/
   loop: "{{ install_fonts }}"
-  notify:
-    Update font cache
 
 - name: Set fonts directory ownership
   ansible.builtin.file:

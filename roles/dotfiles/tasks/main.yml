@@ -4,7 +4,7 @@
  - name: Clone dotfiles repository
    git:
      repo: git@github.com:kp9001/dotfiles.git
-     dest: /var/home/centauri/
+     dest: /var/home/centauri/dotfiles
      clone: yes
      update: yes
 
