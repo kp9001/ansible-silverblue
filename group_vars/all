@@ -11,15 +11,22 @@ base_package_remove:
 # The 'flatpak' role #
 ######################
 flatpak_remote_install:
-  - { name: 'flathub', url: 'https://dl.flathub.org/repo/flathub.flatpakrepo' }                 # Flathub
+  - { name: 'flathub', url: 'https://dl.flathub.org/repo/flathub.flatpakrepo' }                # Flathub
   - { name: 'fedora', url: 'oci+https://registry.fedoraproject.org' }                          # Fedora
   - { name: 'flathub-beta', url: 'https://flathub.org/beta-repo/flathub-beta.flatpakrepo' }    # Flathub Beta
 
 flatpak_package_install:
-  - { remote: 'flathub', package: 'org.signal.Signal' }
-  - { remote: 'flathub', package: 'org.videolan.VLC' }
-  - { remote: 'flathub', package: 'org.standardnotes.standardnotes' }
-  - { remote: 'flathub', package: 'org.keepassxc.KeePassXC' }
-  - { remote: 'flathub', package: 'org.udacityteam.Audacity' }
-  - { remote: 'flathub', package: 'org.mozilla.firefox' }
   - { remote: 'flathub', package: 'com.brave.Browser' }
+  - { remote: 'flathub', package: 'com.github.xournalpp.xournalpp' }
+  - { remote: 'flathub', package: 'com.mojang.Minecraft' }
+  - { remote: 'flathub', package: 'com.obsproject.Studio' }
+  - { remote: 'flathub', package: 'com.valvesoftware.Steam' }
+  - { remote: 'flathub', package: 'me.kozec.syncthingtk' }
+  - { remote: 'flathub', package: 'org.blender.Blender' }
+  - { remote: 'flathub', package: 'org.gimp.GIMP' }
+  - { remote: 'flathub', package: 'org.keepassxc.KeePassXC' }
+  - { remote: 'flathub', package: 'org.mozilla.firefox' }
+  - { remote: 'flathub', package: 'org.signal.Signal' }
+  - { remote: 'flathub', package: 'org.standardnotes.standardnotes' }
+  - { remote: 'flathub', package: 'org.udacityteam.Audacity' }
+  - { remote: 'flathub', package: 'org.videolan.VLC' }
