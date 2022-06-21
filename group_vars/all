@@ -26,6 +26,7 @@ layered_package_install:
   - alacritty
   - htop
   - tmux
+  - qrencode
   - vim
   - xclip
 

@@ -7,5 +7,6 @@
     - { role: fonts }
     - { role: layered_packages }
 
-- hosts: container
-    - { role: containers }
+# - hosts: container
+#   roles:
+#     - { role: containers }
